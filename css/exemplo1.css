@@ -1,0 +1,35 @@
+body {
+    font-family: calibri;
+    font-size: 14pt;
+}
+
+.cabecalho {
+    font-weight: bold;
+    color: white;
+    background-color: rgb(79, 129, 189);
+}
+
+.impar {
+    background-color: rgb(208, 216, 232);
+}
+
+.par {
+    background-color: rgb(233, 237, 244);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: red;
+}
+
+a:hover {
+    color: brown;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: red;
+}

@@ -1,0 +1,35 @@
+h2 {
+    text-decoration: pink underline; /* Define sublinhado */
+    text-align: center; /* Alinhamento do texto */
+    border: 2px solid;
+    border-color: blue;
+    border-radius: 10px;
+}
+
+p {
+    color: darkgreen;
+    font-style: italic;
+    text-align: right;
+    font-family: 'century';
+}
+
+body {
+    background-color: bisque;
+}
+
+.azul-bebe {
+    background-color: aquamarine;
+    color: blue;
+    border: 1px red solid;
+    border-radius: 10px;
+}
+
+.fonte-grande {
+    font-family: tahoma;
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+#titulo {
+    color: red;
+}

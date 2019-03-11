@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Formulários</title>
+    </head>
+    <body>
+        <form method="POST" action="exemplo9.html">
+            <label for="nome">
+                Qual o seu nome? 
+            </label>
+            <!-- Inicio do input nome -->
+            <input 
+                type="text" 
+                name="nome" 
+                id="nome" 
+                size="10" 
+                maxlength="10" 
+                placeholder="Nome..."
+                autocomplete="off"
+            />
+            <!-- Fim do Input nome -->
+            <br>
+            Digite sua senha 
+            <!-- Inicio do input senha -->
+            <input 
+                type="password" 
+                name="senha" 
+                id="senha" 
+                size="10" 
+                maxlength="10"
+                placeholder="Senha..."
+            />
+            <!-- Fim do Input senha -->
+
+            <br>
+            Você concorda com a Pena de Morte?<br>
+            <label for="concordo">
+                <input 
+                    type="checkbox" 
+                    name="concorda" 
+                    id="concordo"
+                    value="concorda"
+                /> concordo <br>
+            </label>
+            
+
+            <input 
+                type="checkbox" 
+                name="discorda" 
+                value="discorda" 
+                checked
+            /> não concordo
+
+            <br>
+
+            <textarea 
+                name="descricao" 
+                id="descricao" 
+                cols="30" rows="10"
+                placeholder="Aqui sua descrição..."
+            ></textarea>
+
+            <br>
+
+            <label for="cidades">Cidades: </label>
+            <select name="cidades" id="cidades">
+                <option disabled selected>Selecione uma cidade</option>
+                <optgroup label="Rio Grande do Norte">
+                    <option value="ntl">Natal</option>
+                    <option value="par">Parnamirim</option>
+                    <option value="sga">São Gonçalo</option>
+                </optgroup>
+                <optgroup label="Paraíba">
+                    <option value="jpa">João Pessoa</option>
+                    <option value="cgd">Campina Grande</option>
+                </optgroup>
+            </select>
+
+            <br>
+
+            <button type="submit">Vai</button>
+
+            <br>
+
+            <label for="">Isto é um Rótulo</label>
+        </form>
+    </body>
+</html>
