@@ -11,3 +11,8 @@
 .margem-topo {
     margin-top: 50px;
 }
+
+.tamanho-imagem {
+    width: 100%;
+    height: 100%;
+}
