@@ -1,94 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-</head>
-<body>
-    <div class="container">
-        <div class="row">
-            <!-- Formulário de Cadastro -->
-            <div class="col-6">
-                <fieldset>
-                    <legend>Cadastro de Funcionário</legend>
-                    <form>
-                        <div class="form-group">
-                            <label for="nome">Nome</label>
-                            <input class="form-control" type="text" id="nome" autofocus>
-                        </div>
-                        <div class="form-group">
-                            <label for="sexo">Sexo</label>
-                            <br>
-                            <label for="masculino">
-                                <input type="radio" name="sexo" id="masculino" value="Masculino" checked>
-                                Masculino
-                            </label>
-                            <label for="feminino">
-                                <input type="radio" name="sexo" id="feminino" value="Feminino">
-                                Feminino
-                            </label>
-                        </div>
-                        <div class="form-group">
-                            <label for="idade">Idade</label>
-                            <input class="form-control" type="number" id="idade" value="18" min="18" max="65">
-                        </div>
-                        <div class="form-group">
-                            <button class="btn btn-primary btn-block" type="button">
-                                <i class="fas fa-save"></i> Salvar
-                            </button>
-                        </div>
-                    </form>
-                </fieldset>
-            </div>
-            <!-- Lista de Elementos -->
-            <div class="col-6">
-                <fieldset>
-                    <legend>Lista de Funcionários</legend>
-                    <table class="table table-striped table-hover">
-                        <thead>
-                            <tr>
-                                <th>Nome</th>
-                                <th>Sexo</th>
-                                <th>Idade</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Miguel</td>
-                                <td>Masculino</td>
-                                <td>18</td>
-                            </tr>
-                            <tr>
-                                <td>Yngrid</td>
-                                <td>Feminino</td>
-                                <td>23</td>
-                            </tr>
-                            <tr>
-                                <td>Paula</td>
-                                <td>Feminino</td>
-                                <td>18</td>
-                            </tr>
-                            <tr>
-                                <td>Raphael</td>
-                                <td>Masculino</td>
-                                <td>25</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </fieldset>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Controle de Funcionários</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container" style="margin-top: 50px;">
+            <div class="row">
+                <!-- Formulário de Cadastro -->
+                <div class="col-6">
+                    <fieldset>
+                        <legend>Cadastro de Funcionário</legend>
+                        <form>
+                            <div class="form-group">
+                                <label for="nome">Nome</label>
+                                <input class="form-control" type="text" id="nome" maxlength="30" required autofocus>
+                            </div>
+                            <div class="form-group">
+                                <label for="idade">Idade</label>
+                                <input class="form-control" type="number" id="idade" value="18" min="18" max="65">
+                            </div>
+                            <div class="form-group">
+                                <label for="sexo">Sexo</label>
+                                <br>
+                                <label for="masculino">
+                                    <input type="radio" name="sexo" id="masculino" value="Masculino" checked>
+                                    Masculino
+                                </label>
+                                <label for="feminino">
+                                    <input type="radio" name="sexo" id="feminino" value="Feminino">
+                                    Feminino
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <button class="btn btn-primary btn-block" type="button">
+                                            <i class="fas fa-save"></i> Salvar
+                                        </button>
+                                    </div>
+                                    <div class="col-6">
+                                        <button class="btn btn-danger btn-block" type="reset">
+                                            <i class="fas fa-trash"></i> Limpar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </fieldset>
+                </div>
+                <!-- Lista de Elementos -->
+                <div class="col-6">
+                    <fieldset>
+                        <legend>Lista de Funcionários</legend>
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Nome</th>
+                                    <th>Sexo</th>
+                                    <th>Idade</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Miguel</td>
+                                    <td>Masculino</td>
+                                    <td>18</td>
+                                </tr>
+                                <tr>
+                                    <td>Yngrid</td>
+                                    <td>Feminino</td>
+                                    <td>23</td>
+                                </tr>
+                                <tr>
+                                    <td>Paula</td>
+                                    <td>Feminino</td>
+                                    <td>18</td>
+                                </tr>
+                                <tr>
+                                    <td>Raphael</td>
+                                    <td>Masculino</td>
+                                    <td>25</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </fieldset>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- Popper -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <!-- Bootstrap -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-</body>
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <!-- Popper -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <!-- Bootstrap -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
 </html>
